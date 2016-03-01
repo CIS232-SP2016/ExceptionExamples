@@ -1,4 +1,4 @@
-package edu.cis232;
+package edu.cis232.example1;
 
 public class ExceptionExample1 {
 
