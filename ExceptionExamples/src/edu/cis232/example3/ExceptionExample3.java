@@ -13,7 +13,6 @@ public class ExceptionExample3 {
 			
 			//Show an error message (user friendly)
 			System.out.println(ex.getMessage());
-			
 		}
 		
 		System.out.println("The program continues...");
