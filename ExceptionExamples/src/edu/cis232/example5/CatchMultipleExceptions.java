@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CatchMultipleExceptions {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		try {
 			Scanner keyboard = new Scanner(System.in);
 			System.out.println("What is the name of the numbers file?");
@@ -18,14 +18,21 @@ public class CatchMultipleExceptions {
 			}
 			System.out.printf("The total is %d%n", total);
 			input.close();
-		} catch (FileNotFoundException e) {
-			System.out.println("The file was not found!");
-		} catch (NumberFormatException e){
+		} 
+		catch (FileNotFoundException e) {
+			System.out.println("The file was not found, restart!");
+		} 
+		catch (NumberFormatException e){
 			System.out.printf("There was an error while reading the file: %s%n", e.getMessage());
-		} catch (Exception e){
+		}
+		catch (Exception e){
 			System.out.println("Some error happened!");
 			e.printStackTrace();
 		}
+		 
+		
+		
+		System.out.println("Bye!");
 	}
 	
 	

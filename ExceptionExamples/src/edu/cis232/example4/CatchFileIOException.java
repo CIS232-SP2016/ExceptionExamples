@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CatchFileIOException {
 
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		try {
 			File file = new File("file.txt");
 			Scanner input = new Scanner(file);

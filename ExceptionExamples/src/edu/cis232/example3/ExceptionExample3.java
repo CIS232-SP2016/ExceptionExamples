@@ -7,6 +7,9 @@ public class ExceptionExample3 {
 	public static void main(String[] args){
 		try {
 			methodOne();
+			int i = 5;
+			i++;
+			System.out.println(i);
 		} catch (Exception ex){
 			//You should print this exception to a log file, but we are not
 			//doing that here.
