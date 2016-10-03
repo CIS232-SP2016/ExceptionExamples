@@ -11,7 +11,7 @@ public class UncheckedExceptions {
 		} catch (NullPointerException ex){
 			System.out.println("Error! The `name` field was never set.");
 		} catch (IndexOutOfBoundsException ex){
-			System.out.println("Tried to access a character index that does not exist. Index goes from 0 to length -1");
+			System.out.println("Tried to access a character index that does not exist.");
 		}
 	}
 	

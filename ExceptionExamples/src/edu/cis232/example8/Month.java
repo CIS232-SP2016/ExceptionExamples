@@ -3,9 +3,9 @@ package edu.cis232.example8;
 public class Month {
 	int month;
 
-	public Month(int monthNum) {
+	public Month(int monthNum) throws InvalidMonthException{
 		if (monthNum < 1 || monthNum > 12) {
-			throw new IllegalMonthException(monthNum);
+			throw new InvalidMonthException(monthNum);
 		}
 		this.month = monthNum;
 	}

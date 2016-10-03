@@ -1,8 +1,8 @@
 package edu.cis232.example8;
 
-public class IllegalMonthException extends IllegalArgumentException {
+public class InvalidMonthException extends Exception {
 	
-	public IllegalMonthException(int monthNum){
+	public InvalidMonthException(int monthNum){
 		super(String.format("%d is out of the range of valid months (1-12)", 
 				monthNum));
 	}

@@ -5,10 +5,10 @@ public class FinallyExample {
 	public static void main(String[] args) {
 		
 		try {
-			String name = "bob";
+			String name = null;
 			System.out.println(name.charAt(0));
 		} catch(NullPointerException e){
-			e.printStackTrace();
+			e.printStackTrace(System.out);
 		} finally {
 			System.out.println("Finally!");
 		}

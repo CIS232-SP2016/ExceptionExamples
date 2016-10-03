@@ -9,7 +9,7 @@ public class FinallyWithFileIOExample {
 	public static void main(String[] args) {
 		Scanner input = null;
 		try {
-			File file = new File("badnumbers.txt");
+			File file = new File("numbers.txt");
 			input = new Scanner(file);
 			// The following code does not execute if the previous line throws
 			// an Exception.
@@ -26,6 +26,9 @@ public class FinallyWithFileIOExample {
 			System.out.println("The file is closing");
 			if (input != null) {
 				input.close();
+				System.out.println("The file was closed");
+			} else {
+				System.out.println("The file did not exist");
 			}
 		}
 	}
